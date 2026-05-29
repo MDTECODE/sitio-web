@@ -15,7 +15,7 @@ import {
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Servicios – NerionTec",
+  title: "Servicios – MDTEC",
   description:
     "Construimos productos digitales enfocados en resultados: desde la idea hasta una aplicación funcional que puedas lanzar en semanas, no meses.",
 };
@@ -222,7 +222,7 @@ export default function ServiciosPage() {
           <h2 className="font-serif text-3xl font-bold text-white text-center mb-10">
             ¿Por qué elegir{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-cyan-400">
-              NerionTec?
+              MDTEC?
             </span>
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">

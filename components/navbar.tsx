@@ -13,7 +13,7 @@ const navLinks = [
   { label: "SaaS", href: "/saas" },
   { label: "Portafolio", href: "/portafolio" },
   { label: "Nosotros", href: "/nosotros" },
-  { label: "Blog", href: "/blog" },
+  // { label: "Blog", href: "/blog" },
 ];
 
 export function Navbar() {
@@ -30,19 +30,19 @@ export function Navbar() {
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between h-16">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2.5 shrink-0">
-          {/* <Image
-            src="/images/logo.png" // ruta desde /public
-            alt="NerionTec logo"
+          <Image
+            src="/images/mdt.png" // ruta desde /public
+            alt="MDTEC logo"
             width={120}
             height={40}
             priority
-          /> */}
-          <span className="font-serif text-xl font-semibold tracking-tight">
+          />
+          {/* <span className="font-serif text-xl font-semibold tracking-tight">
             <span className="text-white">MD</span>
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-cyan-400">
               TEC
             </span>
-          </span>
+          </span> */}
         </Link>
 
         {/* Desktop nav */}

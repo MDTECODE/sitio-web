@@ -12,33 +12,33 @@ import {
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Productos SaaS – NerionTec",
+  title: "Productos SaaS – MDTEC",
   description:
     "NerionDOC, NerionVisionAI y NerionBot — soluciones listas para implementar en tu empresa.",
 };
 
 const products = [
   {
-    tag: "Sistema de control interno",
-    name: "Impulsa",
-    highlight: "360",
-    tagline: "Gestión documental inteligente con IA",
+    tag: "Sistema de operaciones internas",
+    name: "Opera",
+    highlight: "X",
+    tagline: "Plataforma inteligente de coordinación operativa",
     description:
-      "Transforma tu archivo caótico en un sistema organizado, buscable y automatizado. NerionDOC clasifica, etiqueta y procesa documentos sin intervención humana.",
+      "Centraliza y automatiza la operación diaria de tu negocio desde un solo lugar. OperaX organiza agendas, equipos, clientes, seguimiento y procesos operativos para ayudarte a trabajar con más control, productividad y eficiencia.",
     icon: FileText,
     color: "#14B8A6",
     bg: "rgba(20,184,166,0.08)",
     border: "rgba(20,184,166,0.30)",
     glow: "rgba(20,184,166,0.20)",
-    cta: "Ver demo",
+    cta: "Ver Avance",
     ctaVariant: "teal" as const,
     features: [
-      "Clasificación automática con IA",
-      "OCR avanzado para documentos escaneados",
-      "Búsqueda semántica full-text",
-      "Reducción del 70% en tiempos operativos",
-      "Control de versiones y auditoría",
-      "Integración con Google Drive y OneDrive",
+      "Gestión centralizada de operaciones",
+      "Coordinación inteligente de equipos y horarios",
+      "Automatización de recordatorios y seguimiento",
+      "Control de capacidad y ocupación",
+      "Dashboard operativo en tiempo real",
+      "Integración y comunicación vía WhatsApp",
     ],
   },
 ];
@@ -138,7 +138,7 @@ export default function SaasPage() {
                       href="/contacto"
                       className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-gradient-to-r from-orange-500 to-orange-400 text-white text-sm font-semibold shadow-lg hover:scale-105 transition-all duration-200"
                     >
-                      Solicitar demo
+                      Solicitar Informacion
                       <ArrowRight className="w-4 h-4" />
                     </Link>
                     <button
@@ -187,7 +187,7 @@ export default function SaasPage() {
                       style={{ color: p.color }}
                       className="text-sm font-semibold tracking-wide"
                     >
-                      Listo para implementar
+                      En desarrollo
                     </p>
                   </div>
                 </div>

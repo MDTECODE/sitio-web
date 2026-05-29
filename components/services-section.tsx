@@ -214,11 +214,11 @@ export function ServicesSection() {
                 </ul>
 
                 {/* CTA */}
-                <button
+                {/* <button
                   className={`mt-2 w-full border rounded-full py-2 text-sm font-semibold transition-colors duration-200 ${s.btnClass}`}
                 >
                   Ver más &rarr;
-                </button>
+                </button> */}
               </div>
             );
           })}

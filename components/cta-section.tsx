@@ -1,7 +1,7 @@
-"use client"
+"use client";
 
-import { motion } from "framer-motion"
-import { ArrowRight } from "lucide-react"
+import { motion } from "framer-motion";
+import { ArrowRight } from "lucide-react";
 
 function FloatingCube({ className }: { className?: string }) {
   return (
@@ -23,26 +23,62 @@ function FloatingCube({ className }: { className?: string }) {
           fill="url(#cubeFace)"
           fillOpacity="0.4"
         />
-        <path d="M26 28V48" stroke="url(#cubeStroke)" strokeWidth="1.2" strokeOpacity="0.6" />
-        <path d="M26 28L4 16" stroke="url(#cubeStroke)" strokeWidth="1.2" strokeOpacity="0.5" />
-        <path d="M26 28L48 16" stroke="url(#cubeStroke)" strokeWidth="1.2" strokeOpacity="0.5" />
+        <path
+          d="M26 28V48"
+          stroke="url(#cubeStroke)"
+          strokeWidth="1.2"
+          strokeOpacity="0.6"
+        />
+        <path
+          d="M26 28L4 16"
+          stroke="url(#cubeStroke)"
+          strokeWidth="1.2"
+          strokeOpacity="0.5"
+        />
+        <path
+          d="M26 28L48 16"
+          stroke="url(#cubeStroke)"
+          strokeWidth="1.2"
+          strokeOpacity="0.5"
+        />
         <defs>
-          <linearGradient id="cubeGrad" x1="4" y1="4" x2="48" y2="48" gradientUnits="userSpaceOnUse">
+          <linearGradient
+            id="cubeGrad"
+            x1="4"
+            y1="4"
+            x2="48"
+            y2="48"
+            gradientUnits="userSpaceOnUse"
+          >
             <stop stopColor="#22D3EE" />
             <stop offset="1" stopColor="#3B82F6" />
           </linearGradient>
-          <linearGradient id="cubeStroke" x1="4" y1="4" x2="48" y2="48" gradientUnits="userSpaceOnUse">
+          <linearGradient
+            id="cubeStroke"
+            x1="4"
+            y1="4"
+            x2="48"
+            y2="48"
+            gradientUnits="userSpaceOnUse"
+          >
             <stop stopColor="#06B6D4" />
             <stop offset="1" stopColor="#60A5FA" />
           </linearGradient>
-          <linearGradient id="cubeFace" x1="4" y1="4" x2="48" y2="16" gradientUnits="userSpaceOnUse">
+          <linearGradient
+            id="cubeFace"
+            x1="4"
+            y1="4"
+            x2="48"
+            y2="16"
+            gradientUnits="userSpaceOnUse"
+          >
             <stop stopColor="#67E8F9" />
             <stop offset="1" stopColor="#93C5FD" />
           </linearGradient>
         </defs>
       </svg>
     </motion.div>
-  )
+  );
 }
 
 const fadeUp = {
@@ -52,7 +88,7 @@ const fadeUp = {
     y: 0,
     transition: { duration: 0.6, ease: "easeOut", delay },
   }),
-}
+};
 
 export function CTASection() {
   return (
@@ -83,7 +119,9 @@ export function CTASection() {
           Impulsa{" "}
           <span
             className="bg-clip-text text-transparent"
-            style={{ backgroundImage: "linear-gradient(90deg, #1D4ED8, #0891B2)" }}
+            style={{
+              backgroundImage: "linear-gradient(90deg, #1D4ED8, #0891B2)",
+            }}
           >
             tu negocio
           </span>
@@ -91,7 +129,9 @@ export function CTASection() {
           con nuestra{" "}
           <span
             className="bg-clip-text text-transparent"
-            style={{ backgroundImage: "linear-gradient(90deg, #0891B2, #06B6D4)" }}
+            style={{
+              backgroundImage: "linear-gradient(90deg, #0891B2, #06B6D4)",
+            }}
           >
             experiencia
           </span>
@@ -120,7 +160,7 @@ export function CTASection() {
         >
           {/* Primary – orange gradient */}
           <motion.a
-            href="#contacto"
+            href="/contacto"
             whileHover={{ scale: 1.03 }}
             whileTap={{ scale: 0.97 }}
             transition={{ duration: 0.25 }}
@@ -145,7 +185,7 @@ export function CTASection() {
 
           {/* Secondary – dark navy */}
           <motion.a
-            href="#contacto"
+            href="/contacto"
             whileHover={{ scale: 1.03, backgroundColor: "#1e3a8a" }}
             whileTap={{ scale: 0.97 }}
             transition={{ duration: 0.25 }}
@@ -156,5 +196,5 @@ export function CTASection() {
         </motion.div>
       </div>
     </section>
-  )
+  );
 }

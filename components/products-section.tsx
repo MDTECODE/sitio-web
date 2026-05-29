@@ -1,32 +1,35 @@
-"use client"
+"use client";
 
-import { motion } from "framer-motion"
-import { FileText, Eye, Bot, ArrowRight } from "lucide-react"
+import { motion } from "framer-motion";
+import { FileText, Eye, Bot, ArrowRight } from "lucide-react";
 
-type Variant = "teal" | "blue" | "orange"
+type Variant = "teal" | "blue" | "orange";
 
 interface ProductCardProps {
-  icon: React.ReactNode
-  title: string
-  highlight: string
-  description: string
-  features: string[]
-  cta: string
-  variant: Variant
-  delay: number
+  icon: React.ReactNode;
+  title: string;
+  highlight: string;
+  description: string;
+  features: string[];
+  cta: string;
+  variant: Variant;
+  delay: number;
 }
 
-const variantConfig: Record<Variant, {
-  glow: string
-  border: string
-  iconBg: string
-  iconGlow: string
-  bullet: string
-  btnBorder: string
-  btnText: string
-  btnHoverBg: string
-  outerGlow: string
-}> = {
+const variantConfig: Record<
+  Variant,
+  {
+    glow: string;
+    border: string;
+    iconBg: string;
+    iconGlow: string;
+    bullet: string;
+    btnBorder: string;
+    btnText: string;
+    btnHoverBg: string;
+    outerGlow: string;
+  }
+> = {
   teal: {
     glow: "rgba(20,184,166,0.18)",
     border: "rgba(20,184,166,0.5)",
@@ -60,10 +63,19 @@ const variantConfig: Record<Variant, {
     btnHoverBg: "rgba(249,115,22,0.15)",
     outerGlow: "0 0 40px rgba(249,115,22,0.25)",
   },
-}
+};
 
-function ProductCard({ icon, title, highlight, description, features, cta, variant, delay }: ProductCardProps) {
-  const cfg = variantConfig[variant]
+function ProductCard({
+  icon,
+  title,
+  highlight,
+  description,
+  features,
+  cta,
+  variant,
+  delay,
+}: ProductCardProps) {
+  const cfg = variantConfig[variant];
 
   return (
     <motion.div
@@ -78,14 +90,19 @@ function ProductCard({ icon, title, highlight, description, features, cta, varia
       {/* inner gradient overlay */}
       <div
         className="pointer-events-none absolute inset-0 rounded-2xl opacity-40"
-        style={{ background: `radial-gradient(ellipse at 50% 0%, ${cfg.glow} 0%, transparent 70%)` }}
+        style={{
+          background: `radial-gradient(ellipse at 50% 0%, ${cfg.glow} 0%, transparent 70%)`,
+        }}
       />
 
       {/* icon */}
       <motion.div
         animate={{ y: [0, -6, 0] }}
         transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-        style={{ background: cfg.iconBg, boxShadow: `0 0 20px ${cfg.iconGlow}44` }}
+        style={{
+          background: cfg.iconBg,
+          boxShadow: `0 0 20px ${cfg.iconGlow}44`,
+        }}
         className="relative mb-6 flex h-16 w-16 items-center justify-center rounded-2xl"
       >
         <span style={{ color: cfg.iconGlow }}>{icon}</span>
@@ -100,17 +117,24 @@ function ProductCard({ icon, title, highlight, description, features, cta, varia
       {/* divider */}
       <div
         className="my-3 h-px w-full"
-        style={{ background: `linear-gradient(to right, ${cfg.border}, transparent)` }}
+        style={{
+          background: `linear-gradient(to right, ${cfg.border}, transparent)`,
+        }}
       />
 
       {/* description */}
-      <p className="mb-5 text-sm leading-relaxed text-white/60">{description}</p>
+      <p className="mb-5 text-sm leading-relaxed text-white/60">
+        {description}
+      </p>
 
       {/* features */}
       <ul className="mb-8 flex flex-col gap-2 flex-1">
         {features.map((f) => (
           <li key={f} className="flex items-start gap-2 text-sm text-white/80">
-            <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full" style={{ background: cfg.bullet }} />
+            <span
+              className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full"
+              style={{ background: cfg.bullet }}
+            />
             {f}
           </li>
         ))}
@@ -130,38 +154,33 @@ function ProductCard({ icon, title, highlight, description, features, cta, varia
         />
       </motion.button>
     </motion.div>
-  )
+  );
 }
 
 const products: Omit<ProductCardProps, "delay">[] = [
   {
     icon: <FileText size={28} />,
-    title: "Nerion",
-    highlight: "DOC",
-    description: "Gestión documental con IA",
-    features: ["Automatiza clasificación", "Reduce tiempos operativos"],
+    title: "Opera",
+    highlight: "X",
+    description: "Plataforma inteligente de coordinación operativa",
+    features: [
+      "Gestión centralizada de operaciones",
+      "Dashboard operativo en tiempo real",
+    ],
     cta: "Ver demo",
     variant: "teal",
   },
-  {
-    icon: <Eye size={28} />,
-    title: "NerionVision",
-    highlight: "AI",
-    description: "Visión por computador",
-    features: ["Análisis en tiempo real", "Automatización visual"],
-    cta: "Ver más",
-    variant: "blue",
-  },
-  {
-    icon: <Bot size={28} />,
-    title: "Nerion",
-    highlight: "Bot",
-    description: "Asistente conversacional",
-    features: ["Atención 24/7", "Integración con WhatsApp / Web"],
-    cta: "Ver más",
-    variant: "orange",
-  },
-]
+
+  // {
+  //   icon: <Bot size={28} />,
+  //   title: "Nerion",
+  //   highlight: "Bot",
+  //   description: "Asistente conversacional",
+  //   features: ["Atención 24/7", "Integración con WhatsApp / Web"],
+  //   cta: "Ver más",
+  //   variant: "orange",
+  // },
+];
 
 export function ProductsSection() {
   return (
@@ -169,11 +188,17 @@ export function ProductsSection() {
       {/* background glows */}
       <div
         className="pointer-events-none absolute -right-32 -top-32 h-[500px] w-[500px] rounded-full opacity-60"
-        style={{ background: "radial-gradient(circle, rgba(34,211,238,0.12) 0%, transparent 70%)" }}
+        style={{
+          background:
+            "radial-gradient(circle, rgba(34,211,238,0.12) 0%, transparent 70%)",
+        }}
       />
       <div
         className="pointer-events-none absolute -bottom-32 -left-32 h-[500px] w-[500px] rounded-full opacity-60"
-        style={{ background: "radial-gradient(circle, rgba(59,130,246,0.10) 0%, transparent 70%)" }}
+        style={{
+          background:
+            "radial-gradient(circle, rgba(59,130,246,0.10) 0%, transparent 70%)",
+        }}
       />
 
       <div className="relative mx-auto max-w-6xl px-6">
@@ -197,9 +222,11 @@ export function ProductsSection() {
         </motion.div>
 
         {/* cards grid */}
-        <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+        <div className="flex flex-wrap justify-center gap-6">
           {products.map((p, i) => (
-            <ProductCard key={p.title + p.highlight} {...p} delay={i * 0.12} />
+            <div key={p.title + p.highlight} className="w-full max-w-sm">
+              <ProductCard {...p} delay={i * 0.12} />
+            </div>
           ))}
         </div>
 
@@ -215,7 +242,10 @@ export function ProductsSection() {
             ¿Quieres una solución a medida?
           </p>
           <motion.button
-            whileHover={{ scale: 1.04, boxShadow: "0 0 24px rgba(249,115,22,0.45)" }}
+            whileHover={{
+              scale: 1.04,
+              boxShadow: "0 0 24px rgba(249,115,22,0.45)",
+            }}
             transition={{ duration: 0.2 }}
             className="group/cta flex items-center gap-2 rounded-full bg-gradient-to-r from-orange-500 to-orange-400 px-7 py-3 text-sm font-semibold text-white shadow-lg transition-all duration-300"
           >
@@ -228,5 +258,5 @@ export function ProductsSection() {
         </motion.div>
       </div>
     </section>
-  )
+  );
 }

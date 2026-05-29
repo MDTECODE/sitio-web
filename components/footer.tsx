@@ -73,14 +73,26 @@ const STARS: { top: string; left: string; opacity: number }[] = [
   { top: "0.9%", left: "3.9%", opacity: 0.31 },
 ];
 
-function NerionTecLogo({ size = "md" }: { size?: "sm" | "md" }) {
+function MDTECLogo({ size = "md" }: { size?: "sm" | "md" }) {
   const iconSize = size === "sm" ? "w-7 h-7" : "w-9 h-9";
   const textSize = size === "sm" ? "text-xl" : "text-2xl";
   return (
     <div className="flex items-center gap-2">
-      <span className={`font-serif font-bold ${textSize} text-white`}>
-        Nerion<span className="text-[#22d3ee]">Tec</span>
-      </span>
+      <Link href="/" className="flex items-center gap-2.5 shrink-0">
+        <Image
+          src="/images/mdt.png" // ruta desde /public
+          alt="MDTEC logo"
+          width={120}
+          height={40}
+          priority
+        />
+        {/* <span className="font-serif text-xl font-semibold tracking-tight">
+            <span className="text-white">MD</span>
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-cyan-400">
+              TEC
+            </span>
+          </span> */}
+      </Link>
     </div>
   );
 }
@@ -219,7 +231,7 @@ export function Footer() {
       <div className="relative z-10 max-w-7xl mx-auto px-6 pt-20 pb-12">
         {/* Brand centered header */}
         <div className="flex flex-col items-center text-center mb-14">
-          <NerionTecLogo size="md" />
+          <MDTECLogo size="md" />
           <p className="text-white/50 text-sm mt-3 max-w-sm leading-relaxed">
             Potenciamos tu negocio con tecnología de vanguardia.
           </p>
@@ -238,7 +250,7 @@ export function Footer() {
             variants={colVariants}
             className="lg:hidden flex flex-col gap-3"
           >
-            <NerionTecLogo size="sm" />
+            <MDTECLogo size="sm" />
             <p className="text-white/50 text-sm leading-relaxed">
               Potenciamos tu negocio con tecnología de vanguardia.
             </p>
@@ -306,7 +318,7 @@ export function Footer() {
         <div className="flex flex-col md:flex-row items-center justify-between gap-4">
           {/* Left: mini logo */}
           <div className="flex flex-col items-center md:items-start gap-1">
-            <NerionTecLogo size="sm" />
+            <MDTECLogo size="sm" />
             <p className="text-white/35 text-xs">
               Potenciamos tu negocio con tecnología de vanguardia.
             </p>
@@ -315,7 +327,7 @@ export function Footer() {
           {/* Center: copyright + legal */}
           <div className="flex flex-col items-center gap-1 text-center">
             <p className="text-white/40 text-xs">
-              © 2024 NerionTec. Todos los derechos reservados
+              © 2026 MDTECODE. Todos los derechos reservados
             </p>
             <div className="flex flex-wrap justify-center gap-3">
               {legalLinks.map((l) => (

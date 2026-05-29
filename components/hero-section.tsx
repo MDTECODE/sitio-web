@@ -121,7 +121,7 @@ export function HeroSection() {
             >
               {/* Primary CTA */}
               <motion.a
-                href="#contacto"
+                href="contacto"
                 whileHover={{
                   scale: 1.05,
                   boxShadow: "0 0 28px rgba(20, 184, 166, 0.45)",
@@ -134,7 +134,7 @@ export function HeroSection() {
 
               {/* Secondary CTA */}
               <motion.a
-                href="#servicios"
+                href="servicios"
                 whileHover={{
                   scale: 1.05,
                   boxShadow: "0 0 20px rgba(20, 184, 166, 0.15)",
@@ -155,7 +155,7 @@ export function HeroSection() {
               {[
                 { value: "10+", label: "Proyectos entregados" },
                 { value: "98%", label: "Clientes satisfechos" },
-                { value: "2+", label: "Años de experiencia" },
+                { value: "1+", label: "Años de experiencia" },
               ].map((stat) => (
                 <div key={stat.label} className="flex flex-col">
                   <span className="text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-cyan-400">
