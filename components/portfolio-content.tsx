@@ -298,7 +298,7 @@ export function PortfolioContent() {
                 </div>
 
                 <button
-                  onClick={() => setSelectedCase(featured)}
+                  onClick={() => setSelectedCase(c)}
                   className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full border border-teal-500/40 text-teal-400 text-sm font-medium hover:bg-teal-500/10 transition-all duration-200 w-fit"
                 >
                   Ver caso completo

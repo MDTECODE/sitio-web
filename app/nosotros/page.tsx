@@ -205,7 +205,7 @@ export default function NosotrosPage() {
       </section>
 
       {/* Team */}
-      <section className="py-16 px-6">
+      {/* <section className="py-16 px-6">
         <div className="max-w-5xl mx-auto">
           <h2 className="font-serif text-3xl font-bold text-white text-center mb-12">
             El{" "}
@@ -250,7 +250,7 @@ export default function NosotrosPage() {
             })}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Timeline */}
 
