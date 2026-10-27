@@ -1,0 +1,16 @@
+import type { Faq } from "../types"
+
+export const faqs: Faq[] = [
+  { question: "¿Qué es el software a medida?", answer: "Es una solución diseñada alrededor de los procesos, usuarios y objetivos de un negocio concreto. Puede incluir una aplicación, integraciones, automatizaciones y una arquitectura preparada para evolucionar." },
+  { question: "¿Cómo sé si mi negocio necesita software personalizado?", answer: "Conviene evaluarlo cuando las herramientas actuales no cubren un proceso importante, obligan a duplicar información o no pueden integrarse. Si una solución existente resuelve bien el problema, puede ser la opción más eficiente." },
+  { question: "¿Cuánto cuesta desarrollar un software a medida?", answer: "No publicamos una tarifa genérica porque la inversión cambia según funcionalidades, usuarios, integraciones, seguridad, migración, infraestructura, pruebas y soporte. Primero hay que entender el alcance." },
+  { question: "¿Cuánto tiempo tarda un proyecto?", answer: "Depende del alcance, complejidad, integraciones y disponibilidad de las personas involucradas. Una propuesta responsable define fases y entregables después de analizar esos factores." },
+  { question: "¿Qué información necesitan para cotizar?", answer: "Una descripción del problema, usuarios, proceso actual, resultado esperado, sistemas existentes, restricciones y prioridades. No necesitas conocer términos técnicos para iniciar la conversación." },
+  { question: "¿Puedo empezar con una versión básica y ampliarla después?", answer: "Sí, cuando el problema puede dividirse en una primera versión útil. El alcance inicial y las futuras ampliaciones se acuerdan según prioridades y aprendizaje del proyecto." },
+  { question: "¿Puedo solicitar cambios durante el desarrollo?", answer: "Los cambios se pueden evaluar durante el proyecto. Su impacto en alcance, prioridad, coste o calendario debe revisarse y acordarse antes de incorporarlos." },
+  { question: "¿Quién será propietario del código fuente?", answer: "La propiedad intelectual, licencias y condiciones de transferencia deben quedar definidas expresamente en la propuesta o contrato del proyecto." },
+  { question: "¿Puedo integrar el software con herramientas que ya utilizo?", answer: "En muchos casos sí, si las herramientas ofrecen mecanismos de integración adecuados. Se revisan APIs, permisos, límites y calidad de los datos antes de confirmar el alcance." },
+  { question: "¿Cómo protegen la información de mi negocio?", answer: "La solución puede contemplar control de acceso, roles, validación, copias de seguridad y medidas de infraestructura apropiadas. Los requisitos concretos dependen del contexto y se documentan en el proyecto." },
+  { question: "¿Qué sucede después del lanzamiento?", answer: "Se puede acordar una etapa de transferencia, mantenimiento, soporte o evolución. Las responsabilidades y condiciones se definen en la propuesta correspondiente." },
+  { question: "¿Necesito tener conocimientos técnicos para contratar el servicio?", answer: "No. La fase de descubrimiento sirve para traducir tus objetivos y procesos a requisitos comprensibles, sin exigir conocimientos de programación." },
+]

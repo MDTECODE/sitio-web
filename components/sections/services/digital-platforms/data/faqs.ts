@@ -1,0 +1,24 @@
+import type { Faq } from "../types"
+
+export const faqs: Faq[] = [
+  { question: "¿Qué es una plataforma digital?", answer: "Es un entorno digital que reúne usuarios, procesos, información y funcionalidades para resolver una necesidad concreta. Puede ser una herramienta interna, un portal, un marketplace o un producto digital." },
+  { question: "¿En qué se diferencia de un sitio web?", answer: "Un sitio web suele comunicar información. Una plataforma además permite interacciones, cuentas, permisos, procesos, datos e integraciones. La elección depende de lo que necesite hacer el usuario." },
+  { question: "¿Qué tipos de plataformas pueden desarrollar?", answer: "Podemos evaluar portales de clientes, marketplaces, reservas, educación, servicios, plataformas internas y otros modelos según el problema y el alcance del proyecto." },
+  { question: "¿Cuánto cuesta desarrollar una plataforma?", answer: "La inversión depende de funcionalidades, usuarios, integraciones, seguridad, migración, infraestructura, pruebas y soporte. Se define después de comprender el alcance; no existe una tarifa universal responsable." },
+  { question: "¿Cuánto tiempo tarda un proyecto?", answer: "El plazo depende de la complejidad, funcionalidades, integraciones, decisiones y disponibilidad para validar. Se estima por fases una vez definido el alcance inicial." },
+  { question: "¿Qué información necesitan para cotizar?", answer: "Una descripción del problema, usuarios, proceso actual, resultado esperado, sistemas existentes, restricciones y prioridades. No necesitas conocimientos técnicos." },
+  { question: "¿Puedo comenzar con una versión inicial y ampliarla después?", answer: "Sí. Una primera versión puede priorizar el problema más importante y dejar una arquitectura preparada para futuras ampliaciones, siempre que se planifique desde el inicio." },
+  { question: "¿Puedo integrar la plataforma con sistemas existentes?", answer: "En muchos casos sí. Hay que revisar APIs, permisos, límites, formatos y calidad de los datos de cada sistema antes de confirmar el alcance." },
+  { question: "¿Puede incluir pagos en línea?", answer: "Puede evaluarse cuando el modelo lo requiere. La implementación depende del proveedor de pagos, países, monedas, impuestos, reembolsos y requisitos de seguridad." },
+  { question: "¿Cómo se gestionan los usuarios y permisos?", answer: "Se pueden definir cuentas, roles y permisos según las responsabilidades de cada perfil. El modelo correcto depende de los flujos y datos que deba proteger la plataforma." },
+  { question: "¿Cómo se protege la información?", answer: "El diseño puede contemplar autenticación, autorización, validación, cifrado, copias de seguridad, registros y controles de infraestructura adecuados al contexto." },
+  { question: "¿La plataforma funcionará en dispositivos móviles?", answer: "Podemos diseñar una experiencia responsive para navegadores móviles. Una app nativa solo tiene sentido cuando las necesidades justifican esa experiencia específica." },
+  { question: "¿Puedo solicitar cambios durante el desarrollo?", answer: "Se pueden evaluar. Antes de incorporarlos se revisa su impacto en alcance, prioridad, coste y calendario para mantener el proyecto controlado." },
+  { question: "¿Qué sucede si mis requisitos cambian?", answer: "Los cambios forman parte del aprendizaje de muchos proyectos. Se documentan, priorizan y acuerdan antes de ajustar la solución." },
+  { question: "¿Quién será propietario del código fuente?", answer: "La propiedad intelectual, licencias y condiciones de transferencia deben quedar definidas expresamente en la propuesta o contrato." },
+  { question: "¿Qué ocurre después del lanzamiento?", answer: "Se puede acordar transferencia, mantenimiento, soporte o evolución. Las responsabilidades y condiciones se establecen según el proyecto." },
+  { question: "¿Ofrecen mantenimiento y soporte?", answer: "Puede evaluarse como parte del alcance o como una etapa posterior. El tipo de soporte y sus condiciones deben definirse comercialmente." },
+  { question: "¿Necesito conocimientos técnicos para contratar?", answer: "No. El descubrimiento sirve para traducir tus objetivos y procesos a requisitos comprensibles y decisiones concretas." },
+  { question: "¿Puedo contratar solamente una parte del proyecto?", answer: "Sí, se puede evaluar una fase de diagnóstico, diseño, desarrollo o integración independiente si tiene sentido para tus objetivos." },
+  { question: "¿Cómo puedo comenzar un proyecto con MDTECODE?", answer: "Cuéntanos qué necesitas conectar, mejorar o construir mediante el formulario. Con esa información podemos valorar el contexto y los siguientes pasos." },
+]

@@ -1,0 +1,1 @@
+export { DigitalPlatformsPage } from "./DigitalPlatformsPage"

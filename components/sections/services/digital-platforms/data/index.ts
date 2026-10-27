@@ -1,0 +1,7 @@
+export { benefits } from "./benefits"
+export { COMPARISON_HIGHLIGHT_COLUMN, comparisonColumns, comparisonRows } from "./comparison"
+export { contactFields } from "./contact-fields"
+export { faqs } from "./faqs"
+export { platformTypes } from "./platform-types"
+export { processSteps } from "./process"
+export { tech } from "./tech"
